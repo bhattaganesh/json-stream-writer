@@ -1,0 +1,21 @@
+{
+  "name": "bhattaganesh/json-stream-writer",
+  "description": "A scalable PHP library for writing large datasets into JSON streams.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Ganesh Bhatta",
+      "email": "bhattaganesh05@gmail.com"
+    }
+  ],
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "JsonStreamWriter\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.4"
+  }
+}
