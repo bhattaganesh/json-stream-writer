@@ -1,6 +1,12 @@
 {
   "name": "bhattaganesh/json-stream-writer",
   "description": "A scalable PHP library for writing large datasets into JSON streams.",
+  "keywords": [
+    "json",
+    "stream",
+    "writer",
+    "large dataset"
+  ],
   "version": "1.0.0",
   "authors": [
     {
