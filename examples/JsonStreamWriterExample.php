@@ -1,19 +1,4 @@
-# JSON Stream Writer
-
-A PHP library to efficiently write large JSON datasets to a file. This is useful when dealing with large amounts of data and you need to export it to JSON without consuming too much memory.
-
-## Installation
-
-Via Composer:
-
-```bash
-composer require bhattaganesh/json-stream-writer
-```
-
-
-## Usage
-
-```php
+<?php
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -36,6 +21,13 @@ try {
         'id' => rand(1, 10000), // Random ID between 1 and 10000
         'name' => 'User ' . rand(1, 10000), // Random name
         'email' => 'user' . rand(1, 10000) . '@example.com', // Random email
+    ]));
+
+    // Append items to the "users" section
+    $streamWriter->appendItems(array_fill(3001, 6000, [
+        'id' => rand(1, 10000),
+        'name' => 'User ' . rand(1, 10000),
+        'email' => 'user' . rand(1, 10000) . '@example.com',
     ]));
 
     // Create another section called "products"
